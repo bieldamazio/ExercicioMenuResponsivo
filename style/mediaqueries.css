@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+    main {
+        width: 900px;
+        margin: 20px auto;
+    }
+
+    article {
+        width: 100%;
+        padding: 40px;
+    }
+
+    article img {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    nav {
+        padding: 15px 50px;
+    }
+
+    .menu-right a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #000;
+    }
+
+    .menu-right a::before {
+        content: "Login ";
+        font-weight: 500;
+    }
+
+    .menu-right a::before {
+        content: "Pesquisar ";
+        font-weight: 500;
+    }
+}

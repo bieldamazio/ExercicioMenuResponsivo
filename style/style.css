@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Cotcc-c';
+    src: url('../font/cotcc-c.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cotcc-main';
+    src: url('../font/cotcc-main.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lfl';
+    src: url('../font/lfl.ttf') format('truetype');
+}
+
+:root {
+    --header-background-light: #e7edeb;
+    --menu-background-light: #fefdfb;
+    --accent-color-light: #315660;
+
+    --body-background-dark: #2f2f2f;
+    --header-background-dark: #242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+body{
+    background-color: var(--header-background-light);
+}
+
+.logo{
+    background-color: var(--header-background-light);
+    text-align: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+a:hover, button:hover .material-symbols-outlined {
+    color: #555;
+}
+
+.lfl-theme {
+    display: block;
+}
+.cotcc-theme {
+    display: none; 
+}
+
+body.dark-theme .lfl-theme {
+    display: none;
+}
+
+body.dark-theme .cotcc-theme {
+    display: block;
+}
+
+.cotcc-theme h1{
+    font-family: 'Cotcc-main';
+    font-size: 1.5rem;
+}
+
+.cotcc-theme span{
+    font-family: 'Cotcc-c';
+    font-size: 2.4rem;
+}
+
+.lfl-theme h1{
+    font-family: 'Lfl';
+    font-size: 1.5rem;
+    color: var(--accent-color-light);
+}
+
+.lfl-theme span{
+    font-family: 'Lfl';
+    font-size: 2.2rem;
+}
+
+article{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+article img{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+article p{
+    line-height: 1.4;
+    text-align: left;
+}
+
+article h1{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body.dark-theme {
+    background-color: var(--body-background-dark);
+}
+
+body.dark-theme nav {
+    background-color: var(--header-background-dark);
+}
+
+body.dark-theme a, body.dark-theme button .material-symbols-outlined {
+    color: white;
+}
+
+body.dark-theme article {
+    background-color: white;
+}
+
+body.dark-theme .logo {
+    background-color: var(--body-background-dark);
+}
