@@ -18,20 +18,12 @@
         padding: 15px 50px;
     }
 
-    .menu-right a {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        color: #000;
-    }
-
-    .menu-right a::before {
+    #login-a::before {
         content: "Login ";
         font-weight: 500;
     }
 
-    .menu-right a::before {
+    #pesquisar-a::before {
         content: "Pesquisar ";
         font-weight: 500;
     }
